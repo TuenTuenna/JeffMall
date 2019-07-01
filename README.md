@@ -7,4 +7,4 @@ Simple Shopping mall ios app
 - custom collection view
 - data service struct
 
-![JeffMallApp](https://user-images.githubusercontent.com/35421421/60394484-156ad780-9b60-11e9-9237-8afd74239452.gif)
+![JeffMall](https://user-images.githubusercontent.com/35421421/60418510-0c404000-9c1e-11e9-880b-d1528929433e.gif)
