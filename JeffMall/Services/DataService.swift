@@ -19,8 +19,52 @@ class DataService {
         Category(title: "BLOUSE", imageName: "blouse.jpg"),
         Category(title: "TOP & TEE", imageName: "topTee.jpg"),
         Category(title: "SKIRT & PANTS", imageName: "skirtPants.jpg"),
-        Category(title: "OUTER", imageName: "outer.jpg")
+        Category(title: "OUTER", imageName: "outer.jpg"),
+        Category(title: "ETC", imageName: "etc")
     ]
+    
+    
+    private let dresses = [
+        Product(title: "Love Sara Dress black", price: "￦25,000", imageName: "dress_01.jpg"),
+        Product(title: "Lova Sara Dress green", price: "￦23,000", imageName: "dress_02.jpg"),
+        Product(title: "Lova Sara Dress blue", price: "￦21,000", imageName: "dress_03.jpg"),
+        Product(title: "Lova Sara Dress light green", price: "￦27,000", imageName: "dress_04.jpg"),
+        Product(title: "Lova Sara Dress red", price: "￦24,000", imageName: "dress_05.jpg")
+    ]
+    
+    private let blouses = [
+        Product(title: "Love Sara Blouse black", price: "￦15,000", imageName: "dress_01.jpg"),
+        Product(title: "Lova Sara Blouse green", price: "￦13,000", imageName: "dress_02.jpg"),
+        Product(title: "Lova Sara Blouse blue", price: "￦16,000", imageName: "dress_03.jpg"),
+        Product(title: "Lova Sara Blouse light green", price: "￦17,000", imageName: "dress_04.jpg"),
+        Product(title: "Lova Sara Blouse red", price: "￦14,000", imageName: "dress_05.jpg")
+    ]
+    
+    private let tops = [
+        Product(title: "Love Sara Top black", price: "￦5,000", imageName: "dress_01.jpg"),
+        Product(title: "Lova Sara Top green", price: "￦6,000", imageName: "dress_02.jpg"),
+        Product(title: "Lova Sara Top blue", price: "￦5,500", imageName: "dress_03.jpg"),
+        Product(title: "Lova Sara Top light green", price: "￦6,500", imageName: "dress_04.jpg"),
+        Product(title: "Lova Sara Top red", price: "￦7,000", imageName: "dress_05.jpg")
+    ]
+    
+    private let skirts = [
+        Product(title: "Love Sara Skirt black", price: "￦10,000", imageName: "dress_01.jpg"),
+        Product(title: "Lova Sara Skirt green", price: "￦11,000", imageName: "dress_02.jpg"),
+        Product(title: "Lova Sara Skirt blue", price: "￦12,000", imageName: "dress_03.jpg"),
+        Product(title: "Lova Sara Skirt light green", price: "￦9,000", imageName: "dress_04.jpg"),
+        Product(title: "Lova Sara Skirt red", price: "￦13,000", imageName: "dress_05.jpg")
+    ]
+    
+    private let outers = [
+        Product(title: "Love Sara Outer black", price: "￦30,000", imageName: "dress_01.jpg"),
+        Product(title: "Lova Sara Outer green", price: "￦31,000", imageName: "dress_02.jpg"),
+        Product(title: "Lova Sara Outer blue", price: "￦22,000", imageName: "dress_03.jpg"),
+        Product(title: "Lova Sara Outer light green", price: "￦49,000", imageName: "dress_04.jpg"),
+        Product(title: "Lova Sara Outer red", price: "￦35,000", imageName: "dress_05.jpg")
+    ]
+    
+    private let etc = [Product]()
     
     /*
      기능: 카테고리를 가져오는 함수
@@ -29,6 +73,54 @@ class DataService {
     */
     func getCategories() -> [Category] {
         return categories
+    }
+    
+    /*
+     기능: 제품들을 가져오는 함수
+     입력: 없음
+     출력: 카테고리 배열
+     */
+    func getProducts(forCategoryTitle title: String) -> [Product] {
+        switch title {
+        case "DRESS":
+            return getDresses()
+        case "BLOUSE":
+           return getBlouses()
+        case "TOP & TEE":
+           return getTops()
+        case "SKIRT & PANTS":
+           return getSkirts()
+        case "OUTER":
+           return getOuters()
+        case "ETC":
+           return getEtc()
+        default:
+           return getDresses()
+        }
+    }
+    
+    func getDresses() -> [Product] {
+        return dresses
+    }
+    
+    func getBlouses() -> [Product] {
+        return blouses
+    }
+    
+    func getTops() -> [Product] {
+        return tops
+    }
+    
+    func getSkirts() -> [Product] {
+        return skirts
+    }
+    
+    func getOuters() -> [Product] {
+        return outers
+    }
+    
+    func getEtc() -> [Product] {
+        return etc
     }
     
 }
