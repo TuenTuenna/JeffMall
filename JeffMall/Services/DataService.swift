@@ -17,8 +17,8 @@ class DataService {
     private let categories = [
         Category(title: "DRESS", imageName: "dress.jpg"),
         Category(title: "BLOUSE", imageName: "blouse.jpg"),
-        Category(title: "TOP & TEE", imageName: "topTee.jpg"),
-        Category(title: "SKIRT & PANTS", imageName: "skirtPants.jpg"),
+        Category(title: "TSHIRT", imageName: "topTee.jpg"),
+        Category(title: "PANTS", imageName: "skirtPants.jpg"),
         Category(title: "OUTER", imageName: "outer.jpg"),
         Category(title: "ETC", imageName: "etc")
     ]
@@ -40,7 +40,7 @@ class DataService {
         Product(title: "Lova Sara Blouse red", price: "￦14,000", imageName: "dress_05.jpg")
     ]
     
-    private let tops = [
+    private let tShirts = [
         Product(title: "Love Sara Top black", price: "￦5,000", imageName: "dress_01.jpg"),
         Product(title: "Lova Sara Top green", price: "￦6,000", imageName: "dress_02.jpg"),
         Product(title: "Lova Sara Top blue", price: "￦5,500", imageName: "dress_03.jpg"),
@@ -48,12 +48,12 @@ class DataService {
         Product(title: "Lova Sara Top red", price: "￦7,000", imageName: "dress_05.jpg")
     ]
     
-    private let skirts = [
-        Product(title: "Love Sara Skirt black", price: "￦10,000", imageName: "dress_01.jpg"),
-        Product(title: "Lova Sara Skirt green", price: "￦11,000", imageName: "dress_02.jpg"),
-        Product(title: "Lova Sara Skirt blue", price: "￦12,000", imageName: "dress_03.jpg"),
-        Product(title: "Lova Sara Skirt light green", price: "￦9,000", imageName: "dress_04.jpg"),
-        Product(title: "Lova Sara Skirt red", price: "￦13,000", imageName: "dress_05.jpg")
+    private let pants = [
+        Product(title: "Love Sara Pants black", price: "￦10,000", imageName: "dress_01.jpg"),
+        Product(title: "Lova Sara Pants green", price: "￦11,000", imageName: "dress_02.jpg"),
+        Product(title: "Lova Sara Pants blue", price: "￦12,000", imageName: "dress_03.jpg"),
+        Product(title: "Lova Sara Pants light green", price: "￦9,000", imageName: "dress_04.jpg"),
+        Product(title: "Lova Sara Pants red", price: "￦13,000", imageName: "dress_05.jpg")
     ]
     
     private let outers = [
@@ -86,10 +86,10 @@ class DataService {
             return getDresses()
         case "BLOUSE":
            return getBlouses()
-        case "TOP & TEE":
-           return getTops()
-        case "SKIRT & PANTS":
-           return getSkirts()
+        case "TSHIRT":
+           return getTShirts()
+        case "PANTS":
+           return getPants()
         case "OUTER":
            return getOuters()
         case "ETC":
@@ -107,12 +107,12 @@ class DataService {
         return blouses
     }
     
-    func getTops() -> [Product] {
-        return tops
+    func getTShirts() -> [Product] {
+        return tShirts
     }
     
-    func getSkirts() -> [Product] {
-        return skirts
+    func getPants() -> [Product] {
+        return pants
     }
     
     func getOuters() -> [Product] {
