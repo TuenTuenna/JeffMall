@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A95DC5522C9CCD200154834 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95DC5422C9CCD200154834 /* ProductsVC.swift */; };
 		6A9F848222C879440063A70F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9F848122C879440063A70F /* AppDelegate.swift */; };
 		6A9F848422C879440063A70F /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9F848322C879440063A70F /* CategoriesVC.swift */; };
 		6A9F848722C879440063A70F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A9F848522C879440063A70F /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A95DC5422C9CCD200154834 /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
 		6A9F847E22C879440063A70F /* JeffMall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JeffMall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A9F848122C879440063A70F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A9F848322C879440063A70F /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				6A9F848322C879440063A70F /* CategoriesVC.swift */,
+				6A95DC5422C9CCD200154834 /* ProductsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A95DC5522C9CCD200154834 /* ProductsVC.swift in Sources */,
 				6A9F848422C879440063A70F /* CategoriesVC.swift in Sources */,
 				6A9F848222C879440063A70F /* AppDelegate.swift in Sources */,
 				6A9F849722C88B1B0063A70F /* CategoryCell.swift in Sources */,
